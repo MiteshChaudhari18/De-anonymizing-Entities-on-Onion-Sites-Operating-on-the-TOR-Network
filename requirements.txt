@@ -1,5 +1,7 @@
-beautifulsoup4
-numpy
+streamlit
 requests
+beautifulsoup4
 scikit-learn
 selenium
+numpy
+scapy
