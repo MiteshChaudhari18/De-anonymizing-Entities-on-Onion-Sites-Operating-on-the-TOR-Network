@@ -120,10 +120,19 @@ def run_analysis(output_text, progress, onion_url):
     thread.start()
 
 def create_gui():
-    # Initialize music
-    pygame.mixer.init()
-    pygame.mixer.music.load("hacker_theme.mp3.mp3")  # ✅ UPDATED: load from current directory
-    pygame.mixer.music.play(-1)
+    # Fix: Try dummy audio if no device
+    try:
+        pygame.mixer.init()
+    except pygame.error:
+        os.environ["SDL_AUDIODRIVER"] = "dummy"
+        pygame.mixer.init()
+        print("⚠ No audio device detected. Using dummy driver.")
+
+    try:
+        pygame.mixer.music.load("hacker_theme.mp3.mp3")
+        pygame.mixer.music.play(-1)
+    except Exception as e:
+        print(f"⚠ Music not loaded: {e}")
 
     root = tk.Tk()
     root.title("Tor Analysis Tool")
@@ -167,3 +176,4 @@ def create_gui():
 
 if __name__ == "__main__":
     create_gui()
+
