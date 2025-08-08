@@ -18,3 +18,5 @@ tk
 streamlit
 plotly
 trafilatura
+reportlab
+
