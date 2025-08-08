@@ -1,0 +1,53 @@
+De-anonymizing Entities on Onion Sites (TOR Network)
+📌 Overview
+A research tool for analyzing and de-anonymizing .onion websites using OSINT, web scraping, network analysis, and ML.
+⚠ For educational and ethical use only.
+
+🚀 Features
+TOR website scraping (Selenium + BeautifulSoup)
+
+Network packet analysis (scapy)
+
+Geo-location (geopy) & WHOIS lookup
+
+Shodan OSINT integration
+
+Machine Learning (scikit-learn)
+
+Graph visualization & basic GUI
+
+📦 Installation
+bash
+Copy
+Edit
+pip install -r requirements.txt
+requirements.txt
+
+nginx
+Copy
+Edit
+bs4
+geopy
+numpy
+pygame
+pytz
+requests
+scapy
+selenium
+shodan
+scikit-learn
+whois
+⚙️ Usage
+bash
+Copy
+Edit
+python tor_analysis_tool.py
+or
+
+bash
+Copy
+Edit
+python tor_deanonymizer_tool.py
+🛡 Disclaimer
+For academic research only. Do not use for illegal activities.
+
