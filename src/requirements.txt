@@ -1,0 +1,17 @@
+beautifulsoup4
+customtkinter
+dnspython
+geocoder
+matplotlib
+numpy
+opencv-python
+pandas
+Pillow
+PyPDF2
+pytesseract
+requests
+scikit-learn
+scipy
+Shodan
+tldextract
+tk
