@@ -12,6 +12,8 @@ pytesseract
 requests
 scikit-learn
 scipy
-Shodan
+shodan
 tldextract
 tk
+streamlit
+plotly
