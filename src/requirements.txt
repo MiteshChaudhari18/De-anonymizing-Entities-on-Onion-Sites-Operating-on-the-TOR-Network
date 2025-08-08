@@ -17,3 +17,4 @@ tldextract
 tk
 streamlit
 plotly
+trafilatura
